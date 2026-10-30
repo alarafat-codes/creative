@@ -14,9 +14,19 @@ a {
   text-transform: 0.4s;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   width: 1170px;
-  height: 83px;
   margin: 0 auto;
 }
 /* all common css end */
@@ -45,7 +55,7 @@ a {
   color: #5956e8;
 }
 
-a:hover {
+.menubar a:hover {
   color: #5956e8;
   font-width: 500;
   font-size: 18px;
@@ -63,3 +73,99 @@ a:hover {
 }
 
 /* header section end */
+
+/* banner section start  */
+
+#bannerPart {
+  background-color: #5956e8;
+  padding: 183px 0;
+}
+.bannerFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bannerText h1 {
+  width: 501px;
+  font-size: 65px;
+  line-height: 80px;
+  font-weight: 700;
+  color: #fffefe;
+}
+.bannerText p {
+  width: 542px;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  text-transform: none;
+  color: #ffffff;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.bannerBtn a {
+  padding: 13px 22px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 144px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #5956e8;
+}
+
+/* banner section end */
+
+/* card section start */
+
+.servieceText {
+  text-align: center;
+}
+
+.servieceText h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  margin-top: 100px;
+}
+
+.servieceText p {
+  font-weight: 400px;
+  line-height: 27px;
+  width: 542px;
+  height: 54px;
+  text-transform: none;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.servieceCard {
+  width: 32%;
+  border: 1px solid #e3e3e3;
+  padding: 63px 48px;
+  margin: 50px 0;
+  border-radius: 10px;
+}
+.servieceCard:hover {
+  box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+}
+.servieceCard:hover .cardImg svg path {
+  fill: #5956e8;
+  stroke: rgb(255, 255, 255);
+  /* stroke-width:1; */
+}
+.servieceCard p {
+  width: 274px;
+  font-weight: 400;
+  line-height: 27px;
+  text-transform: none;
+  color: #181818b2;
+}
+.servieceCard h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.servieceFlex {
+  display: flex;
+  justify-content: space-between;
+}
+/* card section end  */
