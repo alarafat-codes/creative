@@ -168,4 +168,13 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
+.secondCl{
+  display: flex;
+}
+
+.secondCl .servieceCard{
+
+  width: 32%;
+}
 /* card section end  */
