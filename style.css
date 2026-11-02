@@ -168,13 +168,96 @@ a {
   display: flex;
   justify-content: space-between;
 }
-
 .secondCl{
   display: flex;
 }
 
 .secondCl .servieceCard{
-
+  margin: 30px 0;
   width: 32%;
 }
+
 /* card section end  */
+
+/* portfollio part start  */
+
+.pText{
+  text-align: center;
+}
+ 
+.pText h2{
+  font-width: 700;
+  font-size: 40px;
+}
+.pText p{
+  line-height: 27px;
+  font-width: 400;
+  text-transform: none ;
+  margin: 0 auto;
+   width: 542px;
+  height: 54px;
+
+}
+
+.pImg{
+ margin: 50px 0 ;
+ position: relative;
+
+}
+.pImgg{
+  margin: 30px 0; 
+}
+.pImg h6{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+
+}
+.pImg p{
+  font-width: 400;
+  line-height: 27px;
+  color: #ffffff;
+}
+.contentt a{
+  position: absolute;
+  margin-top: 187px 20px 19px;
+border-radius: 10px;
+  opacity: 0;
+  transition: 0.6s;
+  width: 230px;
+  height: 113px;
+  background-color: #5956e8;
+  text-align: center;
+  padding: 25px 40px 41px 24px;
+}
+.contentt a:hover{
+  opacity: 1;
+}
+/* portfollio part end  */
+
+/* team member section start */
+ .tPart{
+  text-align: center;
+ }
+ .tPart h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  margin-top: 100px;
+}
+  .tPart p{
+  font-weight: 400px;
+  line-height: 27px;
+  width: 542px;
+  height: 54px;
+  text-transform: none;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+#tSec .img{
+  margin-top: 50px;
+  gap: 30px;
+}
+/* team member section end */
