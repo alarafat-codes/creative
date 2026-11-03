@@ -51,9 +51,6 @@ a {
   font-width: 500;
   font-size: 18px;
 }
-.menubar li:first-child a {
-  color: #5956e8;
-}
 
 .menubar a:hover {
   color: #5956e8;
