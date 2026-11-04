@@ -26,7 +26,8 @@ p {
 }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
+  width: 100%;
   margin: 0 auto;
 }
 /* all common css end */
@@ -148,7 +149,6 @@ a {
 .servieceCard:hover .cardImg svg path {
   fill: #5956e8;
   stroke: rgb(255, 255, 255);
-  /* stroke-width:1; */
 }
 .servieceCard p {
   width: 274px;
@@ -183,51 +183,84 @@ a {
 }
 
 .pText h2 {
-  font-width: 700;
+  font-weight: 700;
   font-size: 40px;
 }
+
 .pText p {
   line-height: 27px;
-  font-width: 400;
+  font-weight: 400;
   text-transform: none;
   margin: 0 auto;
   width: 542px;
   height: 54px;
 }
 
-.pImg {
-  margin: 50px 0;
-  position: relative;
-}
+.pImg,
 .pImgg {
-  margin: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
-.pImg h6 {
+
+.pImg {
+  margin: 50px 0 30px;
+}
+
+.pImgg {
+  margin: 0 0 30px;
+}
+
+.pItem {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.pItem > img {
+  width: 100%;
+  display: block;
+}
+
+.pHover {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 19px;
+  padding: 25px 24px;
+  background-color: #5956e8;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.4s;
+}
+
+.pItem:hover .pHover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pHover h6 {
   font-weight: 600;
   font-size: 20px;
   line-height: 27px;
   color: #ffffff;
 }
-.pImg p {
-  font-width: 400;
+
+.pHover p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 27px;
   color: #ffffff;
 }
-.contentt a {
-  position: absolute;
-  margin-top: 187px 20px 19px;
-  border-radius: 10px;
-  opacity: 0;
-  transition: 0.6s;
-  width: 230px;
-  height: 113px;
-  background-color: #5956e8;
-  text-align: center;
-  padding: 25px 40px 41px 24px;
-}
-.contentt a:hover {
-  opacity: 1;
-}
+
 /* portfollio part end  */
 
 /* team member section start */
@@ -250,9 +283,16 @@ a {
   padding-top: 20px;
   padding-bottom: 50px;
 }
+
 #tSec .img {
-  margin-top: 50px;
+  display: flex;
   gap: 30px;
+  margin-top: 50px;
+}
+
+#tSec .img img {
+  width: 100%;
+  min-width: 0;
 }
 /* team member section end */
 
@@ -285,7 +325,7 @@ a {
 
 }
 .cardImg1{
-  margin: 48px 239px 30px 48px;
+   margin: 48px 0 30px 48px;
 }
 .cardImg2{
   margin-left: 48px;
@@ -306,7 +346,7 @@ a {
   font-weight: 600;
   margin-left: 48px;
   font-size: 20px;
-  
+
 }
 .eCard h5{
   margin-left: 48px;
@@ -323,6 +363,7 @@ a {
 }
 .eFlex{
   display: flex;
+  justify-content: space-between;
 }
 
 /* experiance section end */
